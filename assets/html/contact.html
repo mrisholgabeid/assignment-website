@@ -1,0 +1,219 @@
+<!-- This website is the property of MENET CORP NETWORK EST. 2013. Use of any code and or ideas from here are subject to COPYRIGHT VIOLATION if not authorised by the author of the website.  -->
+
+<!-- PLEASE DO MAKE SURE TO SEEK THE AUTHOR'S PERMISSION BEFORE COPYING ANY CODE OR ELSE YOU WILL BE VIOLATING THE COPYRIGHT RULES AND REGULATIONS OF MENET CORP NETWORK. (MCN) 2013 - 2017 -->
+
+<!-- Copyright - All rights reserved @MENET CORP NETWORK 2013 - 2017 -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        
+        <title>WEEKLY REFELECTIVE JOURNAL - Contact</title>
+        
+        <!-- META TAGS FOR THE AUTHOR AND DESCRIPTION OF THE WEBSITE -->
+        <meta name="author" content="Mrisho Abeid Omary">
+        <meta name="keywords" content="Weekly, Reflective, Journal, WRJ, Mrisho, Abeid, Omary, MAO">
+        <meta name="description" content="Weekly refelective journals for Developing a Digital Identity, Information Systems and Databases &amp; Business Accounting for Managers.">
+        
+        <!-- META TAGS FOR RESPONSIVE WEBSITE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <!-- GOOGLE'S VERIFICATION CODE -->
+        <meta name="google-site-verification" content="i4UCkQdjZHFj5_XNjJ3LoXSW4u-F-Nb7RjcLYgggNTY" />
+        
+        <!-- META TAGS TO CREATE A FACEBOOK CARD -->
+        <meta property="og:title" content="WEEKLY REFLECTIVE JOURNAL BY Mrisho Abeid Omary"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://soc.uwl.ac.uk/~21326567/reflective_pages/index.html"/>
+        <meta property="og:description" content="Weekly refelective journals for Developing a Digital Identity, Information Systems and Databases &amp; Business Accounting for Managers."/>
+        <meta property="og:site_name" content="WEEKLY REFLECTIVE JOURNAL"/>        
+        <meta property="og:image" content="../img/entry.jpg"/>
+        
+        <!-- META TAGS TO CREATE A TWITTER CARD -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@mrisho_lg_abeid">
+        <meta name="twitter:title" content="WEEKLY REFLECTIVE JOURNAL BY Mrisho Abeid Omary">
+        <meta name="twitter:description" content="Weekly refelective journals for Developing a Digital Identity, Information Systems and Databases &amp; Business Accounting for Managers.">
+        <meta name="twitter:creator" content="@mrisho_lg_abeid">
+        <meta name="twitter:image:src" content="../img/entry.jpg">
+        
+        <!-- MAIN STYLESHEET AND FAVICON LOGO -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="icon" type="image/png" href="../img/favicon.PNG">
+        
+        <!-- FONT AWESOME FROM BOOTSTRAP CDN -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <!-- JQUERY LIBRARY FROM GOOGLE APIS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        
+        <!-- JAVASCRIPT, PHP & AJAX SCRIPT TO SEND MESSAGE FROM THE CONTACT FORM -->
+        <script type="text/javascript">
+
+			function _(id) {
+				return document.getElementById(id);
+			}
+
+			function submitForm() {
+				_("mybtn").disabled = true;
+				_("status").innerHTML = '<h2 class="status">Please wait while we process your request...</h2>';
+
+				var formdata = new FormData();
+				formdata.append( "firstName", _("firstName").value );
+				formdata.append( "lastName", _("lastName").value );
+				formdata.append( "email", _("email").value );
+				formdata.append( "message", _("message").value );
+
+				var ajax = new XMLHttpRequest();
+				ajax.open( "POST", "../php/emailSender.php" );
+				ajax.onreadystatechange = function() {
+					if(ajax.readyState == 4 && ajax.status == 200) {
+                        if(ajax.responseText == "success") {   
+						  _("my_form").innerHTML = '<h2>Thanks ' + _("firstName").value + ' ' + _("lastName").value + ', your message has been sent.</h2>';
+                        }
+                        
+					   else {
+                           _("status").innerHTML = ajax.responseText;
+                           _("mybtn").disabled = false;
+                       }
+				    }
+			     }
+
+			     ajax.send( formdata );
+            }
+            
+		</script>
+        
+    </head>
+    
+    <body>
+        
+        <!-- **************************** HEADER SECTION BEGINS HERE ******************************** -->
+        <header>
+            
+            <nav>
+                
+                <!-- COMPANY LOGO -->
+                <a href="../../index.html" class="company-logo-large hide-small">WRJ.</a>
+                
+                <!-- MAIN NAVIGATION -->
+                <ul>
+                    <li><a href="#" class="nav-item active">Contact</a></li>
+                    <li><a href="#" class="nav-item trigger">Journals</a>
+                        <ul id="normal">
+                            <li><a href="journals/week1.html" class="trigger_item">Week 1</a></li>
+                            <li><a href="journals/week2.html" class="trigger_item">Week 2</a></li>
+                            <li><a href="journals/week3.html" class="trigger_item">Week 3</a></li>
+                            <li><a href="journals/week4.html" class="trigger_item">Week 4</a></li>
+                            <li><a href="journals/week5.html" class="trigger_item">Week 5</a></li>
+                            <li><a href="journals/week6.html" class="trigger_item">Week 6</a></li>
+                            <li><a href="journals/guidance.html" class="trigger_item">Guidance</a></li>
+                            <li><a href="journals/outcome.html" class="trigger_item">Outcome</a></li>
+                            <li><a href="journals/assessment.html" class="trigger_item">Assessment</a></li>
+                            <li><a href="journals/library.html" class="trigger_item">Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav-item">About</a></li>
+                    <li><a href="../../index.html" class="nav-item">Home</a></li>
+                </ul>
+                
+                <!-- MOBILE NAVIGATION -->
+                <div class="mobile-nav group">
+                    <div class="logo group">
+                        <a href="../../index.html" class="company-logo">WRJ.</a>
+                        
+                        <i class="fa fa-bars" id="hide"></i>
+                        <i class="fa fa-bars" id="show"></i>
+                    </div>
+                    
+                    <div class="menu group" id="content">
+                        <div class="menu-items group">
+                            <ul>
+                                <li><a href="#" class="active2">Contact</a></li>
+                                <li><a href="#">Journals</a>
+                                    <ul id="normal">
+                                        <li><a href="journals/week1.html" class="trigger_item">Week 1</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Week 2</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Week 3</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Week 4</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Week 5</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Week 6</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Guidance</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Outcome</a></li>
+                                        <li><a href="journals/week1.html" class="trigger_item">Assessment</a></li>
+                                        <li><a href="journals/library.html" class="trigger_item">Javascript</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="../../index.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+                
+            </nav>
+            
+        </header>
+        
+        <!-- **************************** MAIN SECTION BEGINS HERE ******************************** -->
+        <main>
+            
+            <!-- CONTACT SECTION -->
+            <div id="contact-wrapper">      
+                <h1 class="title">CONTACT</h1>
+
+                <div class="contact-info">
+                    
+                    <!-- CONTACT FORM -->
+                    <form id="my_form" onsubmit="submitForm(); return false;" class="contact-form">
+
+                        <input type="text" name="fname" placeholder="First Name" required id="firstName">
+
+                        <input type="text" name="lname" placeholder="Last Name" required id="lastName">
+
+                        <input type="email" name="email" placeholder="Email" required id="email">
+
+                        <textarea name="message" rows="10" placeholder="Tell us what you need" required id="message"></textarea>
+
+                        <p id="done-status"><input type="submit" value="Done" class="submit" id="mybtn"> <span id="status"></span></p>
+                    </form>
+                    
+                    <!-- SOCIAL MEDIA AND CONTACT DETAILS -->
+                    <div class="share-links">
+                        <a href="https://www.linkedin.com/in/mrisho-abeid-omary-88b8a2a6" title="Linkedin" target="_blank" class="share-link bg-linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="skype: mrishoabeid95" title="Skype" target="_blank" class="share-link bg-skype">
+                            <i class="fa fa-skype"></i>
+                        </a>
+                        <a href="https://instagram.com/2nd_1" title="Instagram" target="_blank" class="share-link bg-instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="tel: +447405391035" title="Mobile" target="_blank" class="share-link bg-phone">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            
+        </main>
+        
+        <!-- LIVE MAP FOR THE LOCATION -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839.9631868676961!2d-0.3035513750712687!3d51.506816487196865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760df3035c5dfd%3A0x422f2334ccf21438!2sUniversity+of+West+London!5e0!3m2!1sen!2suk!4v1487796279429" style="border:0" allowfullscreen class="map"></iframe>
+        
+        <!-- **************************** FOOTER SECTION BEGINS HERE ******************************** -->
+        <footer>
+            
+            <!-- COPYRIGHT STATEMENT -->
+            <p>&copy; Copyright - All rights reserved @ <a href="https://soc.uwl.ac.uk/~21326567">MENET CORP NETWORK</a> 2013 - 2017</p>
+            
+        </footer>
+        
+        <!-- JAVASCRIPT FILES FOR MENU ICON ACTIVATION -->
+        <script type="text/javascript" src="../js/jquery-ui.js"></script>
+        <script type="text/javascript" src="../js/showhide.js"></script>
+        
+    </body>
+</html>

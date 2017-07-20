@@ -1,0 +1,794 @@
+/* This style document is the property of MENET CORP NETWORK EST. 2013. Use of any code and or ideas from here are subject to COPYRIGHT VIOLATION if not authorised by the author of the website.  */
+
+/* PLEASE DO MAKE SURE TO SEEK THE AUTHOR'S PERMISSION BEFORE COPYING ANY CODE OR ELSE YOU WILL BE VIOLATING THE COPYRIGHT RULES AND REGULATIONS OF MENET CORP NETWORK. (MCN) 2013 - 2017 */
+
+/* Copyright - All rights reserved @MENET CORP NETWORK 2013 - 2017 */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* -------------------------------- MAIN BODY STYLES BEGIN HERE -------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+/* -------------------------------- SELECTION COLOR CHANGE -------------------------------------- */
+::selection {
+    background-color: #222;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background-color: #222;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #222;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #222;
+    color: #fff;
+}
+
+::-o-selection {
+    background-color: #222;
+    color: #fff;
+}
+
+/* -------------------------------- PRINT, REPORT VIEW AND FILES DOWNLOAD -------------------------------- */
+.content-container {
+    width: 100%;
+    position: fixed;
+    top: 65px;
+    margin: 0 auto;
+    height: auto;
+    background-color: red;
+}
+
+.more {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.fa-print {
+    background-color: rgba(67,160,71 ,1);
+    cursor: pointer;
+    color: #fff;
+    padding: 8.7px 4px;
+    display: block;
+    position: relative;
+    bottom: -30.7px;
+    font-size: 0px;
+}
+
+.other {
+    background-color: #444;
+    padding: 5.6px 10px;
+    position: relative;
+    color: #fff;
+    bottom: -31px;
+}
+
+
+
+/* -------------------------------- HEADER SECTION STYLES BEGIN HERE -------------------------------- */
+header {
+    width: 100%;
+    background-color: #222;
+    position: fixed;
+    z-index: 2;
+}
+
+header #normal {
+    overflow: hidden;
+    background-color: #222;
+    position: absolute;
+    top: 100%;
+    width: 130px;
+    transition: 300ms all;
+    max-height: 0;
+}
+
+header nav ul li:hover > #normal {
+    max-height: 750px;
+}
+
+.trigger_item {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: left;
+    float: left;
+    text-align: center;
+    width: 130px;
+    padding: 15px 0px;
+    /*float: right;
+    padding: 10px 95px;
+    display: inline-block;*/
+}
+
+.trigger_item:hover {
+    background-color: #444;
+    width: 140px;
+}
+
+a.active_trigger {
+    background-color: #444;
+    color: #fff;
+    border-right: 4px solid rgba(67,160,71 ,1);
+    width: 140px;
+}
+            
+nav {
+    width: 65%;
+    margin: 0 auto;
+    background-color: #222;
+    height: 70px;
+    color: #fff;
+}
+            
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+    box-sizing: border-box;
+            }
+            
+nav ul li {
+    float: right;
+    margin: 0;
+}
+            
+.nav-item {
+    display: inline-block;
+    padding: 15px 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+            
+.nav-item:hover {
+    background-color: #444;
+}
+
+.active {    
+    background-color: #444;
+    border-bottom: 5px solid rgba(67,160,71 ,1);
+    font-weight: bold;
+    padding-bottom: 11px;
+}
+
+/* -------------------------------- MAIN SECTION STYLES BEGIN HERE -------------------------------- */
+
+main {
+    width: 100%;
+}
+
+.index-author {
+    max-width: 100%;
+    background: rgba(250,250,250 ,1);
+    padding: 120px 0 30px 0;
+}
+
+.index-author img {
+    border-radius: 50%;
+}
+
+#index-author-align {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.files {
+    position: relative;
+    top: -50px;
+}
+
+span.files a {
+    background-color: rgba(67,160,71 ,1);
+    color: #fff;
+    border-radius: 0 0 3px 3px;
+    padding: 5px 5px;
+}
+
+h1#weekly {
+    margin-top: -20px;
+}
+
+#about-content {
+    padding-top: 50px;
+}
+
+main h1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.container {
+    background-color: rgba(250,250,250 ,1);
+    padding: 25px;
+    padding-bottom: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: background .3s ease-in;
+    -moz-transition: background .3s ease-in;
+    -ms-transition: background .3s ease-in;
+    -o-transition: background .3s ease-in;
+    transition: background .3s ease-in;
+}
+
+.container:hover {
+    background: rgba(238,238,238 ,1);
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: color .2s ease-in;
+    -moz-transition: color .2s ease-in;
+    -ms-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+    transition: color .2s ease-in;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: rgba(102,187,106 ,1);
+}
+
+/* -------------------------------- ABOUT SECTION STYLES BEGIN HERE -------------------------------- */
+.about-wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.about-wrapper img {
+    border-radius: 50%;
+    border: 5px solid rgba(238,238,238 ,1);
+}
+
+.about-wrapper h1 {
+    padding-top: 50px;
+}
+
+.about-wrapper h2 {
+    font-size: 18px;
+}
+
+.about-wrapper h3:last-child {
+    background: red;
+}
+
+.about-wrapper .about-wrapper-align {
+    text-align: center;
+    font-size: 16px;
+}
+
+h4 {
+    color: rgba(224,224,224 ,1);
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#download {
+    background: rgba(76,175,80 ,1);
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 4px 4px 0 rgba(56,142,60 ,1);
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    background: rgba(129,199,132 ,1);
+    padding: 0 8px 2px 8px;
+    font-weight: bold;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+    -webkit-transition: background .3s ease-in;
+    -moz-transition: background .3s ease-in;
+    -ms-transition: background .3s ease-in;
+    -o-transition: background .3s ease-in;
+    transition: background .3s ease-in;
+}
+
+.links:hover {
+    background: rgba(165,214,167 ,1);
+    font-weight: normal;
+    color: black;
+    text-decoration: underline;
+}
+
+/* -------------------------------- CONTACT SECTION STYLES BEGIN HERE -------------------------------- */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 70px;
+}
+
+#contact-wrapper {
+    padding: 30px 0 50px 0;
+}
+
+form.contact-form {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(200,230,201 ,1);
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-bottom: 1px solid rgba(129,199,132 ,1);
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background: rgba(67,160,71 ,1);
+    border: 1px solid rgba(156,204,101 ,1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: background .3s ease-in;
+    -moz-transition: background .3s ease-in;
+    -ms-transition: background .3s ease-in;
+    -o-transition: background .3s ease-in;
+    transition: background .3s ease-in;
+}
+
+input[type="submit"]:hover {
+    background: rgba(102,187,106 ,1);
+}
+
+.social-link {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    color: rgba(189,189,189 ,1);
+}
+
+.social-links {
+    color: rgba(100,181,246 ,1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2.status {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    float: right;
+    letter-spacing: normal;
+}
+
+p.done-status {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.share-links {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.share-link {
+    flex: 0 0 24%;
+    color: white;
+    font-size: 18px;
+    padding: 3px 0;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+    color: white;
+  }
+}
+
+.bg-instagram {
+    background: rgba(228,64,95 ,1);
+}
+
+.bg-skype {
+    background: rgba(0,175,240 ,1);
+}
+
+.bg-linkedin {
+    background: rgba(0,119,181 ,1);
+}
+
+.bg-phone {
+    background: rgb(47,47,47);
+}
+
+.map {
+    width: 100%;
+    height: 550px;
+    margin: 0;
+}
+
+/* -------------------------------- FOOTER SECTION STYLES BEGIN HERE -------------------------------- */
+
+footer {
+    height: auto;
+    padding: 30px 10px;
+    background-color: #222;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+footer p a {
+    color: rgba(67,160,71 ,1);
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+
+footer p a:hover {
+    color: rgba(102,187,106 ,1);
+}
+
+/* ############### RESPOSIVE NAVIGATION & COMPANY LOGO ##################### */
+.company-logo-large {
+    position: relative;
+    top: 19px;
+}
+
+a.company-logo-large {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+    float: left;
+    text-decoration: line-through;
+}
+
+.company-logo {
+    position: relative;
+    top: 17px;
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    float: left;
+    text-decoration: line-through;
+}
+
+.mobile-nav {
+    color: white;
+    height: 70px;
+}
+
+.logo .fa-bars {
+    font-weight: normal;
+    position: relative;
+    top: 22px;
+    right: 0;
+    font-size: 25px;
+    font-weight: normal;
+    box-sizing: border-box;
+    float: right;
+}
+
+.logo .fa-bars:hover {
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    right: 0;    
+    background-color: #222;
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 2px dashed #444;
+    padding: 0 20px 0 0;
+    height: 62px;
+    display: none;
+}
+
+.menu-items ul li {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu a {    
+    display: grid;
+    text-align: left;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+.active2 {
+    font-weight: bold;
+    background: #444;
+    border-bottom: 5px solid rgba(67,160,71 ,1);
+}
+
+
+#hide {
+    display: none;
+}
+
+#content {
+    display: none;
+}
+
+#show {
+    display: true;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+/* #####################----------------- MEDIA QUERIES BEGIN HERE ------------------##################### */
+
+/* ------------------------------- MAX-WIDTH QUERIES ----------------------------------- */
+@media screen and (max-width: 590px) {    
+    header, nav {
+        height: 60px;
+    }
+
+    .logo .fa-bars {
+        top: 18px;
+    }
+
+    .company-logo {
+        font-size: 19px;
+        top: 12px;
+    }
+
+    .menu {
+        top: 60px;
+        height: 52px;
+    }
+
+    .menu a {
+        padding: 5px 15px;
+    }
+
+    .menu-items ul li a {
+        font-size: 14px;
+    }
+
+    a.active_trigger {
+        text-align: center;
+    }
+
+    .trigger_item {
+        font-size: 13px;
+        width: 120px;
+        text-align: right;
+    }
+
+    .trigger_item:hover {
+        text-align: center;
+    }
+
+    .title {
+        padding-top: 35px;
+    }
+
+    .about-wrapper h1 {
+        padding-top: 25px;
+    }
+
+    .contact-info {
+        max-width: 100%;
+    }
+    
+    .share-links {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        width: 95%;
+        padding: 30px 0;
+    }
+    
+    .index-author #index-author-align {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    #nav_menu ul li a {
+        font-size: .875em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    nav {
+        max-width: 100%;
+    }
+    
+    .nav-item {
+        display: none;
+    }
+    
+    .hide-small {
+        display: none;
+    }
+    
+    .about-wrapper {
+        max-width: 90%;
+    }
+    
+    #index-author-align {
+        width: 70%;
+    }
+    
+    form.contact-form {
+        max-width: 65%;
+        padding: 0;
+    }
+    
+    .share-links {
+        width: 65%;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        width: 70%;
+    }
+    
+    #index-author-align {
+        width: 70%;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+    
+    .container {
+        margin-bottom: 28px;
+    }
+}
+
+/* ------------------------------- MIN-WIDTH QUERIES ----------------------------------- */
+
+@media screen and (min-width: 961px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    nav {
+        max-width: 40%;
+    }
+    
+    #index-author-align {
+        width: 40%;
+    }
+    
+    .wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    div.files {
+        width: 60%;
+    }
+    
+    .container {
+        margin-bottom: 30px;
+    }
+    
+    #about-content {
+        width: 65%;
+        margin: 0 auto;
+    }
+    
+    .contact-info {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    form.contact-form {
+        max-width: 65%;
+    }
+    
+    .share-links {
+        width: 65%;
+    }
+}
+
+/** ************** "CLEARFIX" SET IN THE .group CLASS BEGINS HERE ************** **/
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}

@@ -1,0 +1,368 @@
+<!-- This website is the property of MENET CORP NETWORK EST. 2013. Use of any code and or ideas from here are subject to COPYRIGHT VIOLATION if not authorised by the author of the website.  -->
+
+<!-- PLEASE DO MAKE SURE TO SEEK THE AUTHOR'S PERMISSION BEFORE COPYING ANY CODE OR ELSE YOU WILL BE VIOLATING THE COPYRIGHT RULES AND REGULATIONS OF MENET CORP NETWORK. (MCN) 2013 - 2017 -->
+
+<!-- Copyright - All rights reserved @MENET CORP NETWORK 2013 - 2017 -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        
+        <title>WEEKLY REFLECTIVE JOURNAL - Javascript Library</title>
+        
+        <!-- META TAGS FOR THE AUTHOR AND DESCRIPTION OF THE WEBSITE -->
+        <meta name="author" content="Mrisho Abeid Omary">
+        <meta name="keywords" content="Weekly, Reflective, Journal, WRJ, Mrisho, Abeid, Omary, MAO">
+        <meta name="description" content="Weekly refelective journals for Developing a Digital Identity, Information Systems and Databases &amp; Business Accounting for Managers.">
+        
+        <!-- META TAGS FOR RESPONSIVE WEBSITE -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <!-- GOOGLE'S VERIFICATION CODE -->
+        <meta name="google-site-verification" content="i4UCkQdjZHFj5_XNjJ3LoXSW4u-F-Nb7RjcLYgggNTY" />
+        
+        <!-- META TAGS TO CREATE A FACEBOOK CARD -->
+        <meta property="og:title" content="WEEKLY REFLECTIVE JOURNAL BY Mrisho Abeid Omary"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://soc.uwl.ac.uk/~21326567/reflective_pages/index.html"/>
+        <meta property="og:description" content="Weekly refelective journals for Developing a Digital Identity, Information Systems and Databases &amp; Business Accounting for Managers."/>
+        <meta property="og:site_name" content="WEEKLY REFLECTIVE JOURNAL"/>         
+        <meta property="og:image" content="../../img/entry.jpg"/>
+        
+        <!-- META TAGS TO CREATE A TWITTER CARD -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@mrisho_lg_abeid">
+        <meta name="twitter:title" content="WEEKLY REFLECTIVE JOURNAL BY Mrisho Abeid Omary">
+        <meta name="twitter:description" content="Weekly refelective journals for Developing a Digital Identity, Information Systems and Databases &amp; Business Accounting for Managers.">
+        <meta name="twitter:creator" content="@mrisho_lg_abeid">
+        <meta name="twitter:image:src" content="../../img/entry.jpg">
+        
+        <!-- MAIN STYLESHEETS AND FAVICON LOGO -->
+        <link rel="stylesheet" type="text/css" href="../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../css/lightbox.css">
+        <link rel="icon" type="image/png" href="../../img/favicon.PNG">
+        
+        <!-- FONT AWESOME FROM BOOTSTRAP CDN -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <!-- JQUERY LIBRARY FROM GOOGLE APIS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="../../js/javascript.js"></script>
+        <script type="text/javascript" src="../../js/lightbox.min.js"></script>
+
+
+    </head>
+    
+    <body>
+        
+        <!-- **************************** HEADER SECTION BEGINS HERE ******************************** -->
+        <header>
+            
+            <nav>
+                
+                <!-- COMPANY LOGO -->
+                <a href="../../../index.html" class="company-logo-large alignment hide-small">WRJ.</a>
+                
+                <!-- MAIN NAVIGATION -->
+                <ul>
+                    <li><a href="../contact.html" class="nav-item">Contact</a></li>
+                    <li><a href="#" class="nav-item trigger active">Journals</a>
+                        <ul id="normal">
+                            <li><a href="week1.html" class="trigger_item">Week 1</a></li>
+                            <li><a href="week2.html" class="trigger_item">Week 2</a></li>
+                            <li><a href="week3.html" class="trigger_item">Week 3</a></li>
+                            <li><a href="week4.html" class="trigger_item">Week 4</a></li>
+                            <li><a href="week5.html" class="trigger_item">Week 5</a></li>
+                            <li><a href="week6.html" class="trigger_item">Week 6</a></li>
+                            <li><a href="guidance.html" class="trigger_item">Guidance</a></li>
+                            <li><a href="outcome.html" class="trigger_item">Outcome</a></li>
+                            <li><a href="assessment.html" class="trigger_item">Assessment</a></li>
+                            <li><a href="#" class="trigger_item active_trigger">Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html" class="nav-item">About</a></li>
+                    <li><a href="../../../index.html" class="nav-item">Home</a></li>
+                </ul>
+                
+                <!-- MOBILE NAVIGATION -->
+                <div class="mobile-nav group">
+                    <div class="logo group">
+                        <a href="../../../index.html" class="company-logo">WRJ.</a>
+                        
+                        <i class="fa fa-bars" id="hide"></i>
+                        <i class="fa fa-bars" id="show"></i>
+                    </div>
+                    
+                    <div class="menu group" id="content">
+                        <div class="menu-items group">
+                            <ul>
+                                <li><a href="../contact.html">Contact</a></li>
+                                <li><a href="#" class="active">Journals</a>
+                                    <ul id="normal">
+                                        <li><a href="week1.html" class="trigger_item">Week 1</a></li>
+                                        <li><a href="week2.html" class="trigger_item">Week 2</a></li>
+                                        <li><a href="week3.html" class="trigger_item">Week 3</a></li>
+                                        <li><a href="week4.html" class="trigger_item">Week 4</a></li>
+                                        <li><a href="week5.html" class="trigger_item">Week 5</a></li>
+                                        <li><a href="week6.html" class="trigger_item">Week 6</a></li>
+                                        <li><a href="guidance.html" class="trigger_item">Guidance</a></li>
+                                        <li><a href="outcome.html" class="trigger_item">Outcome</a></li>
+                                        <li><a href="assessment.html" class="trigger_item">Assessment</a></li>
+                                        <li><a href="#" class="trigger_item active_trigger">Javascript</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../about.html">About</a></li>
+                                <li><a href="../../../index.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </nav>
+            
+        </header>
+        
+        <!-- **************************** MAIN SECTION BEGINS HERE ******************************** -->
+        <main>
+            
+            <!-- WEEK 7 REFLECTIVE JOURNAL -->
+            <div class="main-container">
+                
+    <!-- ********************** PAGES NAVIGATION BUTTONS ********************** -->
+                
+                <div class="nav-align">
+                    <div class="pages">
+                        <div class="btn-nav-pages">
+                            <h6 class="page-btn previous"><a href="assessment.html">PREVIOUS</a></h6>
+                        </div>
+
+                        <div class="btn-nav-pages">
+                            <h6 class="page-btn next"><a href="week1.html">NEXT</a></h6>
+                        </div>
+                    </div>
+                </div>
+                
+    <!-- ********************** PAGES NAVIGATION BUTTONS ********************** -->
+                
+                <h1 class="journal-title">JAVASCRIPT LIBRARY:</h1>
+
+                <div class="modal_window">
+                    <h2>Image Modal Scroll Effect:</h2>
+                    <p>This is an image <strong>modal effect</strong> which create a scroll effect through all images in the gallery whenever a thumbnail of an image is selected.</p>
+                    <div class="modal_thumbs">
+                        <div class="modal_rows">
+                            <div class="row">
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=10" data-lightbox="gallery" data-title="A forest in front of a lake">
+                                        <img src="https://unsplash.it/150/100?image=10" title="A forest in front of a lake" alt="A forest in front of a lake">
+                                    </a>                                    
+                                </div>
+
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=20" data-lightbox="gallery" data-title="A desk workspace">
+                                        <img src="https://unsplash.it/150/100?image=20" title="A desk workspace" alt="A desk workspace">
+                                    </a>                                    
+                                </div>
+
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=30" data-lightbox="gallery" data-title="A coffee mug on a table">
+                                        <img src="https://unsplash.it/150/100?image=30" title="A coffee mug on a table" alt="A coffee mug on a table">
+                                    </a>                                    
+                                </div>
+
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=40" data-lightbox="gallery" data-title="A cat's nose">
+                                        <img src="https://unsplash.it/150/100?image=40" title="A cat's nose" alt="A cat's nose">
+                                    </a>                                    
+                                </div>
+
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=50" data-lightbox="gallery" data-title="A duck on standing in the rope of a boat">
+                                        <img src="https://unsplash.it/150/100?image=50" title="A duck on standing in the rope of a boat" alt="A duck on standing in the rope of a boat">
+                                    </a>                                    
+                                </div>
+
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=60" data-lightbox="gallery" data-title="A computer and other Accessories">
+                                        <img src="https://unsplash.it/150/100?image=60" title="A computer and other Accessories" alt="A computer and other Accessories">
+                                    </a>                                    
+                                </div>
+
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=70" data-lightbox="gallery" data-title="Trees on either side of the road">
+                                        <img src="https://unsplash.it/150/100?image=70" title="Trees on either side of the road" alt="Trees on either side of the road">
+                                    </a>                                    
+                                </div>
+
+                                <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                    <a href="https://unsplash.it/1600/1000?image=80" data-lightbox="gallery" data-title="Pine Cones">
+                                        <img src="https://unsplash.it/150/100?image=80" title="Pine Cones" alt="Pine Cones">
+                                    </a>                                    
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rollover">
+                    <h2>Image Rollover Effect:</h2>
+                    <p>This is a hover effect that swaps an image into a different one whenever you hover the mouse above it.</p>
+                    <ul id="image_rollovers">
+                        <div class="row">
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=903" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=804'" onmouseout="this.src='https://unsplash.it/150/100?image=903'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=901" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=902'" onmouseout="this.src='https://unsplash.it/150/100?image=901'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=907" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=908'" onmouseout="this.src='https://unsplash.it/150/100?image=907'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=905" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=806'" onmouseout="this.src='https://unsplash.it/150/100?image=905'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=803" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=805'" onmouseout="this.src='https://unsplash.it/150/100?image=803'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=799" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=802'" onmouseout="this.src='https://unsplash.it/150/100?image=799'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=809" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=807'" onmouseout="this.src='https://unsplash.it/150/100?image=809'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=509" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=507'" onmouseout="this.src='https://unsplash.it/150/100?image=509'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=502" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=501'" onmouseout="this.src='https://unsplash.it/150/100?image=502'"></li>
+                            </div>
+
+                            <div class="col col-xs-6 col-sm-3 col-md-4 col-lg-3">
+                                <li><img src="https://unsplash.it/150/100?image=506" alt="Week 1 Thumbnail" title="Week 1" onmouseover="this.src='https://unsplash.it/150/100?image=505'" onmouseout="this.src='https://unsplash.it/150/100?image=506'"></li>
+                            </div>
+                        </div>
+                    </ul>                         
+                </div>
+
+                <div class="list">
+                    <h2>Image List Effect:</h2>
+                    <p>This is an image swap effect which changes the main image whenever a thumbnail is clicked on.</p>
+                    <div class="thumbnails">
+                        <ul id="image_list">
+                            <li><a href="https://unsplash.it/1600/1000?image=11" title="Dried river bed">
+                                <img src="https://unsplash.it/150/100?image=11" alt="Dried river bed"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=21" title="Women's shoes">
+                                <img src="https://unsplash.it/150/100?image=21" alt="Women's shoes"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=31" title="A person's feet">
+                                <img src="https://unsplash.it/150/100?image=31" alt="A person's feet"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=41" title="Droplets of water">
+                                <img src="https://unsplash.it/150/100?image=41" alt="Droplets of water"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=51" title="Subtle oceanic waves">
+                                <img src="https://unsplash.it/150/100?image=51" alt="Subtle oceanic waves"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=61" title="A small town">
+                                <img src="https://unsplash.it/150/100?image=61" alt="A small town"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=71" title="A swing">
+                                <img src="https://unsplash.it/150/100?image=71" alt="A swing"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=81" title="A footpath covered with trees">
+                                <img src="https://unsplash.it/150/100?image=81" alt="A footpath covered with trees"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=91" title="A man holding a camera">
+                                <img src="https://unsplash.it/150/100?image=91" alt="A man holding a camera"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=101" title="An old building">
+                                <img src="https://unsplash.it/150/100?image=101" alt="An old building"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=111" title="Antique car - Farmer Boy">
+                                <img src="https://unsplash.it/150/100?image=111" alt="Antique car - Farmer Boy"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=121" title="A beautiful valley">
+                                <img src="https://unsplash.it/150/100?image=121" alt="A beautiful valley"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=131" title="Pier overlooking the ocean">
+                                <img src="https://unsplash.it/150/100?image=131" alt="Pier overlooking the ocean"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=141" title="Small hills">
+                                <img src="https://unsplash.it/150/100?image=141" alt="Small hills"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=151" title="A field opposite a road">
+                                <img src="https://unsplash.it/150/100?image=151" alt="A field opposite a road"></a></li>
+
+                            <li><a href="https://unsplash.it/1600/1000?image=161" title="An old grungy tree log">
+                                <img src="https://unsplash.it/150/100?image=161" alt="An old grungy tree log"></a></li>
+                        </ul>                        
+                    </div>
+
+                    <h3 id="name">Dried river bed</h3>           
+                    <p><img src="https://unsplash.it/1600/1000?image=11" alt="" id="image"></p>                    
+                </div>
+
+                <div class="slideshow">
+                    <h2>Image Slideshow Effect:</h2>
+                    <p>This is a slideshow effect which changes different images in given intervals of times, in this case it is every <strong>3 seconds</strong></p>
+                    <h3 id="caption">Copacabana Beach</h3>
+                    <img id="slide" src="https://unsplash.it/1600/1000?image=100" alt="">
+                    <div id="slides">
+                        <img src="https://unsplash.it/1600/1000?image=200" alt="A type breed of cow">
+                        <img src="https://unsplash.it/1600/1000?image=300" alt="Rolls of hay in a field">
+                        <img src="https://unsplash.it/1600/1000?image=400" alt="Water droplets on a leaf">
+                        <img src="https://unsplash.it/1600/1000?image=600" alt="A man standing in the forest">
+                        <img src="https://unsplash.it/1600/1000?image=700" alt="A fish swimming in the ocean">
+                    </div>
+                </div>
+
+
+
+    
+                
+    <!-- ********************** PAGES NAVIGATION BUTTONS ********************** >
+                
+                <div class="bottom-navigation">
+                    <a href="week1.html" class="bottom-nav">1</a>
+                    <a href="week2.html" class="bottom-nav">2</a>
+                    <a href="week3.html" class="bottom-nav">3</a>
+                    <a href="week4.html" class="bottom-nav">4</a>
+                    <a href="week5.html" class="bottom-nav">5</a>
+                    <a href="week6.html" class="bottom-nav">6</a>
+                    <a href="guidance.html" class="bottom-nav">7</a>
+                    <a href="outcome.html" class="bottom-nav">8</a>
+                    <a href="#" class="bottom-nav current">9</a>
+                </div>
+                
+    <!-- ********************** PAGES NAVIGATION BUTTONS ********************** -->
+                
+            </div>
+            
+        </main>
+        
+        <!-- **************************** FOOTER SECTION BEGINS HERE ******************************** -->
+        <footer>
+            
+            <!-- COPYRIGHT STATEMENT -->
+            <p>&copy; Copyright - All rights reserved @ <a href="https://soc.uwl.ac.uk/~21326567">MENET CORP NETWORK</a> 2013 - 2017</p>
+            
+        </footer>
+        
+        <!-- JAVASCRIPT FILES FOR MENU ICON ACTIVATION -->
+        <script type="text/javascript" src="../../js/jquery-ui.js"></script>
+        <script type="text/javascript" src="../../js/showhide.js"></script>
+        
+    </body>
+</html>
